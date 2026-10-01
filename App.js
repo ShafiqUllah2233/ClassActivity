@@ -19,6 +19,7 @@ export default function App() {
         <Text style={styles.productDescription}>
           Immersive sound, all-day comfort, and a battery that keeps up with you.
         </Text>
+        <Text style={styles.availability}>Available now · Free shipping</Text>
         <Pressable style={styles.button} onPress={() => setSelectedProduct('Aurora Headphones')}>
           <Text style={styles.buttonText}>Explore product</Text>
         </Pressable>
@@ -83,6 +84,11 @@ const styles = StyleSheet.create({
     color: '#cbd5e1',
     fontSize: 15,
     lineHeight: 22,
+  },
+  availability: {
+    color: '#a5f3fc',
+    fontSize: 13,
+    fontWeight: '600',
   },
   button: {
     alignItems: 'center',
